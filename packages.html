@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Packages — King's Travels and Tourism</title>
+  <meta name="description" content="Discover curated luxury travel packages by King's Travels. Handcrafted itineraries featuring five-star accommodations, private chauffeurs, and royal concierge service." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg" />
+</head>
+<body>
+
+  <!-- ==================== ROYAL HEADER ==================== -->
+  <header class="royal-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KING'S</span>
+          <span class="brand-tagline">TRAVEL AND TOURISM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link active">Tour Packages</a>
+        <a href="experiences.html" class="nav-link">Experiences</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-selector">
+          <select class="currency-select" aria-label="Currency Selector">
+            <option value="USD">USD ($)</option>
+            <option value="INR">INR (₹)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+        <a href="contact.html" class="btn-royal btn-sm">Plan Your Journey</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" style="font-size: 1.15rem;">KING'S</span>
+          <span class="brand-tagline" style="font-size: 0.52rem;">TRAVEL AND TOURISM</span>
+        </div>
+      </div>
+      <button class="mobile-drawer-close" style="background:none; border:none; color:var(--gold-light); font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="destinations.html" class="mobile-nav-link">Destinations <span>→</span></a>
+      <a href="packages.html" class="mobile-nav-link active">Tour Packages <span>→</span></a>
+      <a href="experiences.html" class="mobile-nav-link">Experiences <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+      <a href="booking.html" class="mobile-nav-link">Online Booking Engine <span>→</span></a>
+    </div>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(212,175,55,0.2);">
+      <a href="contact.html" class="btn-royal" style="width: 100%; text-align: center;">Plan Your Journey</a>
+    </div>
+  </aside>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1920&q=85" alt="Tour Packages Banner" />
+    </div>
+    <div class="page-hero-overlay"></div>
+
+    <div class="container page-hero-content">
+      <span class="section-tag">Handcrafted Masterpieces</span>
+      <h1 class="hero-title" style="font-size: 3.2rem; margin-bottom: 12px;">Curated Journeys, Crafted for You</h1>
+      <p class="hero-description" style="max-width: 700px; margin-bottom: 0;">
+        “Uncompromising luxury, seamless private transfers, world-class accommodations, and bespoke day-by-day itineraries.”
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> <span>/</span> <span>Tour Packages</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PACKAGES MARKETPLACE ==================== -->
+  <section class="section-padding" style="background: var(--bg-primary);">
+    <div class="container">
+      
+      <!-- Search Box -->
+      <div style="max-width: 580px; margin: 0 auto 24px;">
+        <input 
+          type="text" 
+          id="pkg-search-input" 
+          class="form-control" 
+          placeholder="Search tour packages (e.g. Kashmir, Ladakh, Maldives, Switzerland)..." 
+          style="padding: 14px 20px; border-radius: var(--radius-full); font-size: 0.95rem; border: 1.5px solid var(--gold-border);" 
+        />
+      </div>
+
+      <!-- Region Filter Tabs -->
+      <div class="filter-container">
+        <button class="filter-btn pkg-filter-btn active" data-region="all">All Packages</button>
+        <button class="filter-btn pkg-filter-btn" data-region="india">India Escapes</button>
+        <button class="filter-btn pkg-filter-btn" data-region="asia">Asia & Tropics</button>
+        <button class="filter-btn pkg-filter-btn" data-region="europe">European Grandeur</button>
+        <button class="filter-btn pkg-filter-btn" data-region="middle east">Middle East Luxury</button>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="packages-grid" id="packages-grid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BESPOKE ITINERARY CTA ==================== -->
+  <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid rgba(212,175,55,0.15); text-align: center;">
+    <div class="container">
+      <span class="section-tag">Private Tailoring</span>
+      <h2 class="section-title">Looking for a Completely Customized Journey?</h2>
+      <p class="section-subtitle" style="margin-bottom: 30px;">
+        Our Senior Concierge specialists craft bespoke private jet itineraries, multi-country journeys, and private villa bookings.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="contact.html" class="btn-royal btn-lg">Request Bespoke Consultation ✦</a>
+        <a href="booking.html" class="btn-outline-gold btn-lg">Launch 4-Step Booking Engine</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ROYAL FOOTER ==================== -->
+  <footer class="royal-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+            <div class="brand-icon">
+              <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">KING'S</span>
+              <span class="brand-tagline">TRAVEL AND TOURISM</span>
+            </div>
+          </a>
+          <p>
+            “Travel Beyond Limits, Experience the Extraordinary.” Crafting peerless journeys and unforgettable memories across the globe.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">🌐</a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <div class="footer-links">
+            <a href="destinations.html">Destinations</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="destinations.html">Travel Stories</a>
+            <a href="booking.html">Online Booking Engine</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#mission">Our Mission & Vision</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html#faq">FAQ & Support</a>
+            <a href="contact.html">Careers & Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Royal Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>King's Luxury Tower, Level 42, Downtown Blvd, Dubai / London / New Delhi</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span>+971 4 800 KINGS / +91 1800 200 9999</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span>concierge@kingstravels.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 King's Travels and Tourism. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Luxury Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" aria-label="Scroll to Top">↑</button>
+
+  <!-- Global Modal Container -->
+  <div class="royal-modal-backdrop">
+    <div class="royal-modal-content">
+      <button class="modal-close-btn">✕</button>
+      <h3 class="modal-dynamic-title" style="font-family: var(--font-royal); font-size: 1.6rem; color: #FFFFFF; margin-bottom: 20px;"></h3>
+      <div class="modal-dynamic-body"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

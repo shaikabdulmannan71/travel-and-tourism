@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Plan Your Journey — King's Travels and Tourism</title>
+  <meta name="description" content="Plan your extraordinary journey with King's Travels. Submit your bespoke consultation request or connect directly with our global luxury travel concierges." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg" />
+</head>
+<body>
+
+  <!-- ==================== ROYAL HEADER ==================== -->
+  <header class="royal-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KING'S</span>
+          <span class="brand-tagline">TRAVEL AND TOURISM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Tour Packages</a>
+        <a href="experiences.html" class="nav-link">Experiences</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-selector">
+          <select class="currency-select" aria-label="Currency Selector">
+            <option value="USD">USD ($)</option>
+            <option value="INR">INR (₹)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+        <a href="contact.html" class="btn-royal btn-sm">Plan Your Journey</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" style="font-size: 1.15rem;">KING'S</span>
+          <span class="brand-tagline" style="font-size: 0.52rem;">TRAVEL AND TOURISM</span>
+        </div>
+      </div>
+      <button class="mobile-drawer-close" style="background:none; border:none; color:var(--gold-light); font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="destinations.html" class="mobile-nav-link">Destinations <span>→</span></a>
+      <a href="packages.html" class="mobile-nav-link">Tour Packages <span>→</span></a>
+      <a href="experiences.html" class="mobile-nav-link">Experiences <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link active">Contact <span>→</span></a>
+      <a href="booking.html" class="mobile-nav-link">Online Booking Engine <span>→</span></a>
+    </div>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(212,175,55,0.2);">
+      <a href="contact.html" class="btn-royal" style="width: 100%; text-align: center;">Plan Your Journey</a>
+    </div>
+  </aside>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=85" alt="Contact Banner" />
+    </div>
+    <div class="page-hero-overlay"></div>
+
+    <div class="container page-hero-content">
+      <span class="section-tag">Private Concierge</span>
+      <h1 class="hero-title" style="font-size: 3.2rem; margin-bottom: 12px;">Let's Plan Your Extraordinary Journey</h1>
+      <p class="hero-description" style="max-width: 700px; margin-bottom: 0;">
+        “Share your travel vision with our Senior Concierge Curators. We will craft a bespoke itinerary tailored to your exact desires.”
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact & Consultation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT FORM & SIDEBAR ==================== -->
+  <section class="section-padding" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="contact-layout">
+        
+        <!-- Consultation Form -->
+        <div class="contact-form-card">
+          <span class="section-tag" style="margin-bottom: 12px;">Bespoke Consultation</span>
+          <h2 style="font-family: var(--font-royal); font-size: 1.8rem; color: #FFFFFF; margin-bottom: 24px;">Your Private Travel Blueprint</h2>
+          
+          <form id="contact-journey-form">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Lord / Lady Jonathan Vance" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="jonathan@vance.com" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 019-2834" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-destination">Preferred Destination *</label>
+                <input type="text" id="contact-destination" class="form-control" placeholder="e.g. Kashmir, Maldives, Switzerland" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Approximate Travel Date</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Number of Days</label>
+                <select class="form-control">
+                  <option value="5-7">5 to 7 Days</option>
+                  <option value="8-10">8 to 10 Days</option>
+                  <option value="11-14">11 to 14 Days</option>
+                  <option value="15+">15+ Days Grand Expedition</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Number of Travelers</label>
+                <select class="form-control">
+                  <option value="1">1 Solo Royal Traveler</option>
+                  <option value="2" selected>2 Travelers (Couple / Honeymoon)</option>
+                  <option value="4">3 to 5 Travelers (Family)</option>
+                  <option value="8">6+ Private Group</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Budget Tier (Per Person)</label>
+                <select class="form-control">
+                  <option value="classic-luxury">$1,500 - $3,000 (Classic Luxury)</option>
+                  <option value="high-luxury" selected>$3,000 - $6,000 (High Luxury)</option>
+                  <option value="ultra-vip">$6,000+ (Ultra VIP & Private Aviation)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Travel Style</label>
+              <select class="form-control">
+                <option value="royal-heritage">Royal Heritage & Palaces</option>
+                <option value="alpine-adventure">Mountain & Alpine Adventure</option>
+                <option value="coastal-island">Private Beach & Overwater Sanctuary</option>
+                <option value="wellness-ayurveda">Holistic Spa & Ayurveda</option>
+                <option value="culinary-epicurean">Michelin & Epicurean Gastronomy</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Special Requirements & Interests</label>
+              <textarea class="form-control" placeholder="Please mention any dietary preferences, private aviation requests, anniversary milestones, or specific hotel wishes..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-royal btn-lg" style="width: 100%; margin-top: 10px;">
+              Start Planning My Journey <span>✦</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Sidebar Contact Info -->
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3 style="font-family: var(--font-royal); font-size: 1.3rem; color: #FFFFFF; margin-bottom: 24px; border-bottom: 1px solid var(--gold-border); padding-bottom: 12px;">
+              Direct Royal Concierge
+            </h3>
+            
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <h4>24/7 Telephone</h4>
+                <p><a href="tel:+97148005464">+971 4 800 KINGS (5464)</a></p>
+                <p><a href="tel:+9118002009999">+91 1800 200 9999 (India Toll-Free)</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div class="info-content">
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:concierge@kingstravels.com">concierge@kingstravels.com</a></p>
+                <p><a href="mailto:vip@kingstravels.com">vip@kingstravels.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🏢</div>
+              <div class="info-content">
+                <h4>Headquarters & Global Hubs</h4>
+                <p><strong>Dubai:</strong> Level 42, Downtown Luxury Tower, UAE</p>
+                <p><strong>London:</strong> 14 Mayfair Place, Westminster, UK</p>
+                <p><strong>New Delhi:</strong> Diplomatic Enclave, Chanakyapuri, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">⏰</div>
+              <div class="info-content">
+                <h4>Business Hours</h4>
+                <p>Concierge Desk: 24 Hours / 7 Days a Week</p>
+                <p>Private Salon Consultations: 09:00 – 20:00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instant Booking Shortcut -->
+          <div style="background: rgba(212,175,55,0.08); border: 1.5px dashed var(--gold-primary); border-radius: var(--radius-lg); padding: 28px; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 8px;">⚡</div>
+            <h4 style="font-family: var(--font-royal); font-size: 1.15rem; color: var(--gold-light); margin-bottom: 8px;">Know Your Dates Already?</h4>
+            <p style="font-size: 0.88rem; color: #CBD5E1; margin-bottom: 18px;">
+              You can instantly configure your package, add custom luxury services, and generate an immediate royal invoice.
+            </p>
+            <a href="booking.html" class="btn-royal btn-sm">Launch 4-Step Booking Engine ✦</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div id="faq" style="margin-top: 80px;">
+        <div class="text-center">
+          <span class="section-tag">Frequently Answered</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about our luxury booking and concierge procedures.</p>
+        </div>
+
+        <div class="faq-accordion" style="max-width: 840px; margin: 30px auto 0;">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>What makes King's Travels different from standard travel agencies?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              We exclusively specialize in ultra-luxury, high-comfort journeys. Every client is assigned a dedicated senior curator, 24/7 personal on-ground assistance, private luxury vehicles, and hand-selected five-star palace suites with VIP inclusions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can you customize existing tour packages?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Absolutely. Every package featured on our website serves as a curated baseline. You can adjust duration, upgrade to private villas or presidential suites, charter private helicopters, or extend with multi-country stops.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How does the payment and deposit process work?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Upon finalizing your customized itinerary, a 30% deposit secures all five-star accommodations, private aviation, and luxury permits. The remaining balance is payable 21 days prior to departure.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you arrange private jet charters and helicopter transfers?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes. We have licensed global aviation partners for private Gulfstream, Bombardier, and helicopter transfers across the Swiss Alps, Dubai, Kashmir, and island archipelagos.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ROYAL FOOTER ==================== -->
+  <footer class="royal-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+            <div class="brand-icon">
+              <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">KING'S</span>
+              <span class="brand-tagline">TRAVEL AND TOURISM</span>
+            </div>
+          </a>
+          <p>
+            “Travel Beyond Limits, Experience the Extraordinary.” Crafting peerless journeys and unforgettable memories across the globe.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">🌐</a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <div class="footer-links">
+            <a href="destinations.html">Destinations</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="destinations.html">Travel Stories</a>
+            <a href="booking.html">Online Booking Engine</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#mission">Our Mission & Vision</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html#faq">FAQ & Support</a>
+            <a href="contact.html">Careers & Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Royal Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>King's Luxury Tower, Level 42, Downtown Blvd, Dubai / London / New Delhi</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span>+971 4 800 KINGS / +91 1800 200 9999</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span>concierge@kingstravels.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 King's Travels and Tourism. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Luxury Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" aria-label="Scroll to Top">↑</button>
+
+  <!-- Global Modal Container -->
+  <div class="royal-modal-backdrop">
+    <div class="royal-modal-content">
+      <button class="modal-close-btn">✕</button>
+      <h3 class="modal-dynamic-title" style="font-family: var(--font-royal); font-size: 1.6rem; color: #FFFFFF; margin-bottom: 20px;"></h3>
+      <div class="modal-dynamic-body"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

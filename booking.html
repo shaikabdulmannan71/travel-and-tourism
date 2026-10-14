@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Booking Engine — King's Travels and Tourism</title>
+  <meta name="description" content="Reserve your royal journey with King's Travels interactive 4-step booking engine. Instant pricing, custom luxury add-ons, and confirmation." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg" />
+</head>
+<body>
+
+  <!-- ==================== ROYAL HEADER ==================== -->
+  <header class="royal-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KING'S</span>
+          <span class="brand-tagline">TRAVEL AND TOURISM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Tour Packages</a>
+        <a href="experiences.html" class="nav-link">Experiences</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-selector">
+          <select class="currency-select" aria-label="Currency Selector">
+            <option value="USD">USD ($)</option>
+            <option value="INR">INR (₹)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+        <a href="contact.html" class="btn-royal btn-sm">Plan Your Journey</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" style="font-size: 1.15rem;">KING'S</span>
+          <span class="brand-tagline" style="font-size: 0.52rem;">TRAVEL AND TOURISM</span>
+        </div>
+      </div>
+      <button class="mobile-drawer-close" style="background:none; border:none; color:var(--gold-light); font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="destinations.html" class="mobile-nav-link">Destinations <span>→</span></a>
+      <a href="packages.html" class="mobile-nav-link">Tour Packages <span>→</span></a>
+      <a href="experiences.html" class="mobile-nav-link">Experiences <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+      <a href="booking.html" class="mobile-nav-link active">Online Booking Engine <span>→</span></a>
+    </div>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(212,175,55,0.2);">
+      <a href="contact.html" class="btn-royal" style="width: 100%; text-align: center;">Plan Your Journey</a>
+    </div>
+  </aside>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1920&q=85" alt="Booking Banner" />
+    </div>
+    <div class="page-hero-overlay"></div>
+
+    <div class="container page-hero-content">
+      <span class="section-tag">Instant Royal Reservation</span>
+      <h1 class="hero-title" style="font-size: 3.2rem; margin-bottom: 12px;">Reserve Your Royal Journey</h1>
+      <p class="hero-description" style="max-width: 680px; margin-bottom: 0;">
+        “Customize your luxury package, select bespoke VIP add-ons, and secure your extraordinary travel reservation.”
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> <span>/</span> <span>Booking Engine</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4-STEP BOOKING WIZARD ==================== -->
+  <section class="section-padding" style="background: var(--bg-primary);">
+    <div class="container" style="max-width: 880px;">
+      
+      <div class="booking-wizard-card">
+        
+        <!-- Stepper Header -->
+        <div class="stepper-header">
+          <div class="step-item active" data-step="1">
+            <div class="step-number">1</div>
+            <span class="step-label">Package</span>
+          </div>
+          <div class="step-item" data-step="2">
+            <div class="step-number">2</div>
+            <span class="step-label">Add-ons</span>
+          </div>
+          <div class="step-item" data-step="3">
+            <div class="step-number">3</div>
+            <span class="step-label">Traveler</span>
+          </div>
+          <div class="step-item" data-step="4">
+            <div class="step-number">4</div>
+            <span class="step-label">Confirmation</span>
+          </div>
+        </div>
+
+        <form id="booking-wizard-form">
+          
+          <!-- STEP 1: Package & Schedule -->
+          <div class="wizard-step active" id="step-1">
+            <h3 style="font-family: var(--font-royal); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 18px;">
+              Step 1: Choose Tour Package & Schedule
+            </h3>
+            
+            <div class="form-group">
+              <label class="form-label" for="wizard-pkg-select">Select Tour Package *</label>
+              <select id="wizard-pkg-select" class="form-control">
+                <!-- Dynamically populated via js/main.js -->
+              </select>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="wizard-date">Departure Date *</label>
+                <input type="date" id="wizard-date" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wizard-travelers">Number of Travelers *</label>
+                <input type="number" id="wizard-travelers" class="form-control" min="1" max="20" value="2" required />
+              </div>
+            </div>
+
+            <div class="wizard-nav-btns">
+              <div></div>
+              <button type="button" class="btn-royal wizard-next-btn">Next: VIP Add-ons ✦</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Custom Add-ons -->
+          <div class="wizard-step" id="step-2">
+            <h3 style="font-family: var(--font-royal); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 8px;">
+              Step 2: Customize Your Royal Enhancements
+            </h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+              Elevate your journey with handpicked private amenities and experiences.
+            </p>
+
+            <div class="addons-grid">
+              <div class="addon-card">
+                <div class="addon-info">
+                  <input type="checkbox" class="addon-checkbox wizard-addon-check" data-addon-name="Private Helicopter Transfer" data-addon-price="850" />
+                  <div>
+                    <div class="addon-title">🚁 Helicopter Scenic Flight / Transfer</div>
+                    <div style="font-size: 0.78rem; color: var(--text-muted);">Private point-to-point aerial transfer</div>
+                  </div>
+                </div>
+                <div class="addon-price" data-price-usd="850">+$850</div>
+              </div>
+
+              <div class="addon-card">
+                <div class="addon-info">
+                  <input type="checkbox" class="addon-checkbox wizard-addon-check" data-addon-name="Dedicated 24/7 Royal Butler" data-addon-price="500" />
+                  <div>
+                    <div class="addon-title">🤵 Dedicated 24/7 Royal Butler</div>
+                    <div style="font-size: 0.78rem; color: var(--text-muted);">Personal luggage, dining, and daily valet</div>
+                  </div>
+                </div>
+                <div class="addon-price" data-price-usd="500">+$500</div>
+              </div>
+
+              <div class="addon-card">
+                <div class="addon-info">
+                  <input type="checkbox" class="addon-checkbox wizard-addon-check" data-addon-name="Candlelight Yacht Dinner" data-addon-price="600" />
+                  <div>
+                    <div class="addon-title">🛥️ Candlelight Yacht Dinner</div>
+                    <div style="font-size: 0.78rem; color: var(--text-muted);">Private sunset cruise with 5-course chef menu</div>
+                  </div>
+                </div>
+                <div class="addon-price" data-price-usd="600">+$600</div>
+              </div>
+
+              <div class="addon-card">
+                <div class="addon-info">
+                  <input type="checkbox" class="addon-checkbox wizard-addon-check" data-addon-name="Personal Photographer & Drone Pilot" data-addon-price="450" />
+                  <div>
+                    <div class="addon-title">📸 Professional Photographer & Drone</div>
+                    <div style="font-size: 0.78rem; color: var(--text-muted);">Cinematic 4K vacation memories & edited album</div>
+                  </div>
+                </div>
+                <div class="addon-price" data-price-usd="450">+$450</div>
+              </div>
+            </div>
+
+            <!-- Live Summary Box in Step 2 -->
+            <div class="booking-summary-box">
+              <h4 style="font-family: var(--font-royal); font-size: 1.1rem; color: var(--gold-light); margin-bottom: 12px;">Live Estimation Breakdown</h4>
+              <div class="summary-row">
+                <span id="summary-pkg-name">Package Base Total:</span>
+                <span id="summary-pkg-price" style="font-weight: 700;">$0</span>
+              </div>
+              <div class="summary-row">
+                <span>Guests:</span>
+                <span id="summary-travelers">2 Guests</span>
+              </div>
+              <div class="summary-row">
+                <div>
+                  <span>Selected Enhancements:</span>
+                  <div id="summary-addons-list">None Selected</div>
+                </div>
+                <span id="summary-addons-price" style="font-weight: 700;">$0</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total Estimated Investment:</span>
+                <span id="summary-grand-total">$0</span>
+              </div>
+            </div>
+
+            <div class="wizard-nav-btns">
+              <button type="button" class="btn-outline-gold wizard-prev-btn">← Back to Package</button>
+              <button type="button" class="btn-royal wizard-next-btn">Next: Traveler Details ✦</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Traveler Info -->
+          <div class="wizard-step" id="step-3">
+            <h3 style="font-family: var(--font-royal); font-size: 1.4rem; color: var(--gold-light); margin-bottom: 18px;">
+              Step 3: Traveler & VIP Contact Details
+            </h3>
+
+            <div class="form-group">
+              <label class="form-label" for="traveler-name">Lead Guest Full Name *</label>
+              <input type="text" id="traveler-name" class="form-control" placeholder="e.g. Sir Arthur Sterling" required />
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="traveler-email">Email Address *</label>
+                <input type="email" id="traveler-email" class="form-control" placeholder="arthur@sterling.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="traveler-phone">WhatsApp / Contact Number *</label>
+                <input type="tel" id="traveler-phone" class="form-control" placeholder="+971 50 123 4567" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="traveler-notes">VIP Preferences or Special Occasion</label>
+              <textarea id="traveler-notes" class="form-control" placeholder="Mention dietary preferences, honeymoon arrangements, room view wishes, or flight numbers..."></textarea>
+            </div>
+
+            <div class="wizard-nav-btns">
+              <button type="button" class="btn-outline-gold wizard-prev-btn">← Back to Add-ons</button>
+              <button type="button" class="btn-royal wizard-next-btn">Confirm Reservation ✦</button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Confirmation & Reference Receipt -->
+          <div class="wizard-step" id="step-4">
+            <div class="booking-confirmed-card">
+              <div class="confirm-crown-badge">👑</div>
+              <span class="section-tag" style="margin-bottom: 12px;">Reservation Confirmed</span>
+              <h2 style="font-family: var(--font-royal); font-size: 2rem; color: #FFFFFF; margin-bottom: 8px;">
+                Your Royal Voyage is Reserved
+              </h2>
+              <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 600px; margin: 0 auto 16px;">
+                A Senior Concierge Director has been assigned to your booking. Your private travel documents and welcome package are currently being finalized.
+              </p>
+
+              <div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Official Booking Reference</span>
+                <div class="booking-ref-code" id="confirm-ref-code">KT-2026-948210</div>
+              </div>
+
+              <div id="confirm-details-box">
+                <!-- Dynamically populated by js/main.js -->
+              </div>
+
+              <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                <button type="button" onclick="window.printBookingReceipt()" class="btn-outline-gold">🖨️ Print Royal Receipt</button>
+                <a href="index.html" class="btn-royal">Return to Homepage ✦</a>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ROYAL FOOTER ==================== -->
+  <footer class="royal-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+            <div class="brand-icon">
+              <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">KING'S</span>
+              <span class="brand-tagline">TRAVEL AND TOURISM</span>
+            </div>
+          </a>
+          <p>
+            “Travel Beyond Limits, Experience the Extraordinary.” Crafting peerless journeys and unforgettable memories across the globe.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">🌐</a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <div class="footer-links">
+            <a href="destinations.html">Destinations</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="destinations.html">Travel Stories</a>
+            <a href="booking.html">Online Booking Engine</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#mission">Our Mission & Vision</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html#faq">FAQ & Support</a>
+            <a href="contact.html">Careers & Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Royal Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>King's Luxury Tower, Level 42, Downtown Blvd, Dubai / London / New Delhi</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span>+971 4 800 KINGS / +91 1800 200 9999</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span>concierge@kingstravels.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 King's Travels and Tourism. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Luxury Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== DYNAMIC ROYAL MODAL ==================== -->
+  <div class="royal-modal-backdrop">
+    <div class="royal-modal-content">
+      <div class="royal-modal-header">
+        <h3 class="modal-dynamic-title">Royal Experience Details</h3>
+        <button class="modal-close-btn" aria-label="Close Modal">✕</button>
+      </div>
+      <div class="modal-dynamic-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

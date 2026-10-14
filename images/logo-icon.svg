@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="100%" height="100%">
+  <defs>
+    <!-- Rich Metallic 3D Gold Gradient for Main Surfaces -->
+    <linearGradient id="goldIconMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C4"/>
+      <stop offset="20%" stop-color="#F2D16B"/>
+      <stop offset="45%" stop-color="#D4AF37"/>
+      <stop offset="75%" stop-color="#9A7217"/>
+      <stop offset="90%" stop-color="#CFA533"/>
+      <stop offset="100%" stop-color="#FFF2B8"/>
+    </linearGradient>
+
+    <!-- Spherical Radial Gradient for 3D Crown Jewels / Spheres -->
+    <radialGradient id="goldIconSphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#FFF2B5"/>
+      <stop offset="55%" stop-color="#D4AF37"/>
+      <stop offset="85%" stop-color="#8C6514"/>
+      <stop offset="100%" stop-color="#4F3805"/>
+    </radialGradient>
+
+    <!-- Linear Gradient for Flight Swoosh -->
+    <linearGradient id="iconSwooshGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B88A1E"/>
+      <stop offset="30%" stop-color="#F3D372"/>
+      <stop offset="70%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#FFF8D6"/>
+    </linearGradient>
+
+    <!-- 3D Realistic Drop Shadow Filter -->
+    <filter id="iconRoyalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#iconRoyalShadow)">
+    <!-- ==================== CROWN 5 JEWEL SPHERES ==================== -->
+    <circle cx="90" cy="80" r="9" fill="url(#goldIconSphere)" />
+    <circle cx="145" cy="52" r="11" fill="url(#goldIconSphere)" />
+    <circle cx="205" cy="34" r="13" fill="url(#goldIconSphere)" />
+    <circle cx="265" cy="52" r="11" fill="url(#goldIconSphere)" />
+    <circle cx="320" cy="80" r="9" fill="url(#goldIconSphere)" />
+
+    <!-- ==================== CROWN MAIN BODY ==================== -->
+    <path d="M 90,89 
+             C 103,118 112,132 122,136 
+             C 127,118 131,76 145,63 
+             C 154,112 166,134 177,137 
+             C 183,105 189,59 205,47 
+             C 221,59 227,105 233,137 
+             C 244,134 256,112 265,63 
+             C 279,76 283,118 288,136 
+             C 298,132 307,118 320,89 
+             C 309,117 299,142 297,151 
+             C 248,138 162,138 113,151 
+             C 111,142 101,117 90,89 
+             Z" 
+          fill="url(#goldIconMetallic)" />
+
+    <!-- ==================== CROWN ARCHED BASE BAND ==================== -->
+    <path d="M 111,163 
+             C 162,149 248,149 299,163 
+             L 301,175 
+             C 248,161 162,161 109,175 
+             Z" 
+          fill="url(#goldIconMetallic)" />
+
+    <!-- ==================== FLIGHT SWOOSH ARC ==================== -->
+    <path d="M 55,232 
+             C 150,182 270,175 355,192 
+             C 358,193 358,197 355,198 
+             C 265,183 150,190 55,238 
+             C 52,236 52,233 55,232 
+             Z" 
+          fill="url(#iconSwooshGrad)" />
+
+    <!-- ==================== AIRPLANE SILHOUETTE ==================== -->
+    <g transform="translate(388, 197) rotate(-20) scale(1.22)">
+      <path d="M 0,-18 
+               C 2.2,-18 4.5,-12 4.5,-4 
+               L 27,6 
+               L 27,10.5 
+               L 4.5,8 
+               L 4.5,19 
+               L 11.5,25 
+               L 11.5,28.5 
+               L 1,27 
+               L -1,27 
+               L -11.5,28.5 
+               L -11.5,25 
+               L -4.5,19 
+               L -4.5,8 
+               L -27,10.5 
+               L -27,6 
+               L -4.5,-4 
+               C -4.5,-12 -2.2,-18 0,-18 
+               Z" 
+            fill="url(#goldIconMetallic)" />
+    </g>
+  </g>
+</svg>

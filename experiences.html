@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unique Experiences — King's Travels and Tourism</title>
+  <meta name="description" content="Discover extraordinary travel experiences curated by King's Travels: Mountain adventures, luxury beach retreats, royal heritage, desert expeditions, wellness, and culinary journeys." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg" />
+</head>
+<body>
+
+  <!-- ==================== ROYAL HEADER ==================== -->
+  <header class="royal-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">KING'S</span>
+          <span class="brand-tagline">TRAVEL AND TOURISM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Tour Packages</a>
+        <a href="experiences.html" class="nav-link active">Experiences</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-selector">
+          <select class="currency-select" aria-label="Currency Selector">
+            <option value="USD">USD ($)</option>
+            <option value="INR">INR (₹)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+        <a href="contact.html" class="btn-royal btn-sm">Plan Your Journey</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" style="font-size: 1.15rem;">KING'S</span>
+          <span class="brand-tagline" style="font-size: 0.52rem;">TRAVEL AND TOURISM</span>
+        </div>
+      </div>
+      <button class="mobile-drawer-close" style="background:none; border:none; color:var(--gold-light); font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="destinations.html" class="mobile-nav-link">Destinations <span>→</span></a>
+      <a href="packages.html" class="mobile-nav-link">Tour Packages <span>→</span></a>
+      <a href="experiences.html" class="mobile-nav-link active">Experiences <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+      <a href="booking.html" class="mobile-nav-link">Online Booking Engine <span>→</span></a>
+    </div>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(212,175,55,0.2);">
+      <a href="contact.html" class="btn-royal" style="width: 100%; text-align: center;">Plan Your Journey</a>
+    </div>
+  </aside>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1920&q=85" alt="Experiences Banner" />
+    </div>
+    <div class="page-hero-overlay"></div>
+
+    <div class="container page-hero-content">
+      <span class="section-tag">Signature Journeys</span>
+      <h1 class="hero-title" style="font-size: 3.2rem; margin-bottom: 12px;">Experience the Extraordinary</h1>
+      <p class="hero-description" style="max-width: 720px; margin-bottom: 0;">
+        “Step into a world of transcendent adventures, bespoke culinary immersions, private wildlife safaris, and wellness sanctuaries.”
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> <span>/</span> <span>Experiences</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCES COLLECTION ==================== -->
+  <section class="section-padding" style="background: var(--bg-primary);">
+    <div class="container">
+      
+      <div class="text-center" style="margin-bottom: 20px;">
+        <span class="section-tag">Curated Categories</span>
+        <h2 class="section-title">10 Dimensions of Royal Exploration</h2>
+        <p class="section-subtitle">
+          Each experience is tailored exclusively for King's Travels guests with private guides, VIP logistics, and unrivaled exclusivity.
+        </p>
+      </div>
+
+      <div class="experiences-grid">
+        
+        <!-- 1. Mountain Adventures -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85" alt="Mountain Adventures" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🏔️</span>
+            <span class="exp-tier">Alpine Exclusives</span>
+            <h3 class="exp-title">Mountain Adventures</h3>
+            <p class="exp-desc">Himalayan high-pass treks, Swiss Alps heli-skiing, and secluded high-altitude chalets overlooking glaciated peaks.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Moderate to High Adventure</span>
+              <a href="contact.html?exp=Mountain+Adventures" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Luxury Beach Escapes -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85" alt="Luxury Beach Escapes" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🏝️</span>
+            <span class="exp-tier">Coastal Opulence</span>
+            <h3 class="exp-title">Luxury Beach Escapes</h3>
+            <p class="exp-desc">Private overwater bungalows in Maldives, secluded turquoise coves in Andaman, and private beach cabanas.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Pure Relaxation</span>
+              <a href="contact.html?exp=Luxury+Beach+Escapes" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Royal Heritage Tours -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1000&q=85" alt="Royal Heritage Tours" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🏰</span>
+            <span class="exp-tier">Palatial Journeys</span>
+            <h3 class="exp-title">Royal Heritage Tours</h3>
+            <p class="exp-desc">Private access to maharaja palaces, historical European castles, and grand dining in opulent ballrooms.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Cultural Immersion</span>
+              <a href="contact.html?exp=Royal+Heritage+Tours" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Island Adventures -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1000&q=85" alt="Island Adventures" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🌊</span>
+            <span class="exp-tier">Archipelago Expeditions</span>
+            <h3 class="exp-title">Island Adventures</h3>
+            <p class="exp-desc">Bespoke yacht charters, snorkeling with bioluminescence, and hidden sea caves in remote ocean archipelagos.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Light Adventure</span>
+              <a href="contact.html?exp=Island+Adventures" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Desert Expeditions -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=85" alt="Desert Expeditions" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🐪</span>
+            <span class="exp-tier">Dune Sanctuary</span>
+            <h3 class="exp-title">Desert Expeditions</h3>
+            <p class="exp-desc">Starlit Arabian desert camps, Thar royal caravans, falconry demonstrations, and private campfire banquets.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Signature Luxury</span>
+              <a href="contact.html?exp=Desert+Expeditions" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Wellness & Ayurveda -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=85" alt="Wellness & Ayurveda" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🧘</span>
+            <span class="exp-tier">Holistic Sanctuaries</span>
+            <h3 class="exp-title">Wellness & Ayurveda</h3>
+            <p class="exp-desc">Ancient Ayurvedic detoxification in Kerala, Himalayan meditation retreats, and thermal hot-spring spas.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Rejuvenation</span>
+              <a href="contact.html?exp=Wellness+Ayurveda" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Culinary Journeys -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85" alt="Culinary Journeys" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🍽️</span>
+            <span class="exp-tier">Epicurean Elite</span>
+            <h3 class="exp-title">Culinary Journeys</h3>
+            <p class="exp-desc">Private dinners with Michelin-starred chefs, vineyard tastings in France, and royal Kashmiri Wazwan banquets.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Gourmet Gastronomy</span>
+              <a href="contact.html?exp=Culinary+Journeys" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Photography Tours -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?auto=format&fit=crop&w=1000&q=85" alt="Photography Tours" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">📸</span>
+            <span class="exp-tier">Visual Masterclass</span>
+            <h3 class="exp-title">Photography Tours</h3>
+            <p class="exp-desc">Masterclass photography expeditions guided by award-winning National Geographic and landscape photographers.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Creative Exploration</span>
+              <a href="contact.html?exp=Photography+Tours" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Luxury Helicopter Experiences -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1000&q=85" alt="Luxury Helicopter Experiences" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🚁</span>
+            <span class="exp-tier">Skyline Expeditions</span>
+            <h3 class="exp-title">Luxury Helicopter Experiences</h3>
+            <p class="exp-desc">Private scenic flights over the Swiss Alps, Dubai skyline, and direct glacier transfers to high mountain peaks.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: VIP Access</span>
+              <a href="contact.html?exp=Helicopter+Experiences" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Wilderness Adventures -->
+        <div class="exp-card">
+          <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85" alt="Wilderness Adventures" class="exp-img" />
+          <div class="exp-overlay">
+            <span class="exp-icon">🏕️</span>
+            <span class="exp-tier">Untamed Frontiers</span>
+            <h3 class="exp-title">Wilderness Adventures</h3>
+            <p class="exp-desc">Bengal tiger safaris in Ranthambore, African safari luxury lodges, and conservation treks in untouched wilderness.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+              <span style="font-size: 0.75rem; color: var(--gold-light); font-weight: 600;">Level: Thrilling Safari</span>
+              <a href="contact.html?exp=Wilderness+Adventures" class="btn-royal btn-sm">Discover Experience ✦</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ROYAL FOOTER ==================== -->
+  <footer class="royal-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="King's Travels and Tourism">
+            <div class="brand-icon">
+              <img src="images/logo-icon.svg" alt="King's Travels" class="brand-icon-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">KING'S</span>
+              <span class="brand-tagline">TRAVEL AND TOURISM</span>
+            </div>
+          </a>
+          <p>
+            “Travel Beyond Limits, Experience the Extraordinary.” Crafting peerless journeys and unforgettable memories across the globe.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">🌐</a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <div class="footer-links">
+            <a href="destinations.html">Destinations</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="destinations.html">Travel Stories</a>
+            <a href="booking.html">Online Booking Engine</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#mission">Our Mission & Vision</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html#faq">FAQ & Support</a>
+            <a href="contact.html">Careers & Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Royal Concierge</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span>King's Luxury Tower, Level 42, Downtown Blvd, Dubai / London / New Delhi</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span>+971 4 800 KINGS / +91 1800 200 9999</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span>concierge@kingstravels.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 King's Travels and Tourism. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Luxury Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" aria-label="Scroll to Top">↑</button>
+
+  <!-- Global Modal Container -->
+  <div class="royal-modal-backdrop">
+    <div class="royal-modal-content">
+      <button class="modal-close-btn">✕</button>
+      <h3 class="modal-dynamic-title" style="font-family: var(--font-royal); font-size: 1.6rem; color: #FFFFFF; margin-bottom: 20px;"></h3>
+      <div class="modal-dynamic-body"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
